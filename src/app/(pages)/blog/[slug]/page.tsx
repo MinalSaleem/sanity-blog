@@ -4,7 +4,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
 import CommentsSection from "@/components/(pages)/CommentSection";
 
-export const revalide = 10; //seconds
+export const revalidate = 60; //seconds
 
 // static paths for dynamic routes to be generated at build time
 export async function getStaticParams() {
@@ -15,15 +15,15 @@ export async function getStaticParams() {
     return slugRoutes.map((slug: string) => ({ slug }));
   }
 
-export default async function page({params:{slug}}:{params:{slug:string}}) {
-  
-  const query = `*[_type == 'post' && slug.current=="${slug}" ]{
+    export default async function page({params:{slug}}:{params:{slug:string}}) {
+      
+    const query = `*[_type == 'post' && slug.current=="${slug}" ]{
     title,summary,image,content,publishedAt,
     author->{name,about,image}
     }[0]`;
 
   const post = await client.fetch(query);
-  console.log(post);
+  // console.log(post);
 
   return (
     <article className="pt-12 mb-24 px-2 2xl:px-12 flex flex-col gap-y-8 justify-center bg-[#FAFAFA]">
