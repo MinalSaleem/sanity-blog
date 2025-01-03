@@ -29,9 +29,9 @@ export default function About() {
         />
       </div>
 
-      <section className="text-start py-12 sm:px-3">
+      <section className="text-start py-12 sm:px-3 px-2">
         <p className="text-[#666666] font-bold">How We Work</p>
-        <h1 className="text-5xl font-bold my-9 text-start sm:text-3xl lg:text-5xl text-[#333333]">
+        <h1 className="font-bold my-9 text-start text-4xl lg:text-5xl text-[#333333]">
           I will show you how our team works
         </h1>
       </section>

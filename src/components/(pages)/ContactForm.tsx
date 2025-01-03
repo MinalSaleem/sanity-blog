@@ -11,7 +11,7 @@ export default function Contactform() {
               type="text"
               name="name"
               required
-              className="bg-gray-100 py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+              className="bg-gray-100  text-[#7C4EE4] py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
             />
           </div>
           <div className="flex flex-col flex-1">
@@ -20,7 +20,7 @@ export default function Contactform() {
               type="email"
               name="email"
               required
-              className="bg-gray-100 py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+              className="bg-gray-100 text-[#7C4EE4] py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
             />
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Contactform() {
               type="phonenumber"
               name="phone"
               required
-              className="bg-gray-100 py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+              className="bg-gray-100  text-[#7C4EE4] py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
             />
           </div>
           <div className="flex flex-col flex-1">
@@ -41,7 +41,7 @@ export default function Contactform() {
               type="text"
               name="subject"
               required
-              className="bg-gray-100 py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+              className="bg-gray-100 text-[#7C4EE4] py-[13px] pl-[16px] rounded-md w-full h-[54px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
             />
           </div>
         </div>
@@ -51,11 +51,11 @@ export default function Contactform() {
           <textarea
             name="message"
             rows={4}
-            className="w-full px-4 py-2 bg-gray-100 rounded-md"
+            className="w-full px-4 py-2 bg-gray-100 text-[#7C4EE4] rounded-md focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
           ></textarea>
         </div>
         <div className="flex justify-center">
-          <button className="w-full md:w-80 bg-[#7C4EE4] hover:text-[#7C4EE4] hover:bg-white text-white px-4 py-2 rounded font-bold shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]">
+          <button className="w-full md:w-80 bg-[#7C4EE4]  hover:text-[#7C4EE4] hover:bg-white text-white px-4 py-2 rounded font-bold shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]">
             SEND MESSAGE
           </button>
         </div>

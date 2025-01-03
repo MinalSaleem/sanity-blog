@@ -12,7 +12,7 @@ export default function Main() {
           <h4 className="text-lg md:text-2xl">{main[0].h4}</h4>
           <h2 className="text-2xl md:text-4xl font-bold">{main[0].h2}</h2>
           <p className="text-sm md:text-base">{main[0].p}</p>
-          <Button variant="outline" className="transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4] text-[#7C4EE4] hover:text-[#7C4EE4]">
+          <Button variant="outline" className="transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4] text-[#7C4EE4] hover:text-white hover:bg-[#7C4EE4] hover:border hover:border-white">
             <Link href="/blog">{main[0].button}</Link>
           </Button>
         </div>
@@ -48,7 +48,7 @@ export default function Main() {
           <p className="text-xs md:text-sm text-gray-600 mb-2 md:mb-4">
             {main[1].p}
           </p>
-          <Button variant="outline" className="text-[#7C4EE4] hover:text-[#7C4EE4] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]">
+          <Button variant="outline" className="text-[#7C4EE4] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#7C4EE4] hover:bg-[#7C4EE4] hover:text-white">
             <Link href="/blog">{main[1].button}</Link>
           </Button>
         </div>

@@ -30,7 +30,7 @@ export default function CommentsSection() {
           value={name}
           onChange={(event) => setName(event.target.value)}
           placeholder="Enter your name"
-          className="outline-[#7C4EE4] rounded-sm w-[270px]  border border-[#7C4EE4] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+          className="outline-[#7C4EE4] rounded-sm w-[270px] text-[#7C4EE4] border border-[#7C4EE4] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
         />
         <span
           className="flex flex-col space-x-5 justify-start space-y-5 items-start
@@ -40,7 +40,7 @@ export default function CommentsSection() {
             value={newComment}
             onChange={(event) => setNewComment(event.target.value)}
             placeholder="Comment here"
-            className="outline-[#7C4EE4] rounded-sm w-[270px] border border-[#7C4EE4] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
+            className="outline-[#7C4EE4] rounded-sm w-[270px] text-[#7C4EE4] border border-[#7C4EE4] focus:outline-none focus:ring-2 focus:ring-[#7C4EE4]"
           />
           <Button
             onClick={handleAddComment}

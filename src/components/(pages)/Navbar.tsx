@@ -39,7 +39,7 @@ export default function Navbar() {
                   <li className="flex flex-col py-4 space-y-5 text-[#333333]">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/about">Blogs</Link>
+                    <Link href="/blog">Blogs</Link>
                     <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
