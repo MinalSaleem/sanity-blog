@@ -6,16 +6,12 @@ import CommentsSection from "@/components/(pages)/CommentSection";
 
 export const revalidate = 60; //seconds
 
-// static paths for dynamic routes to be generated at build time
-export async function getStaticParams() {
-    const query = `*[_type == 'post']{"slug": slug.current}`;
-    const slugs = await client.fetch(query);
-    const slugRoutes = slugs.map((item: { slug: string }) =>item.slug);
-  
-    return slugRoutes.map((slug: string) => ({ slug }));
-  }
+type PageProps = {
+  params: Promise<{ slug: string }>;
+ };
 
-    export default async function page({params:{slug}}:{params:{slug:string}}) {
+export default async function page({ params }: PageProps) {
+      const { slug } = await params;
       
     const query = `*[_type == 'post' && slug.current=="${slug}" ]{
     title,summary,image,content,publishedAt,
